@@ -17,6 +17,7 @@ const categoryIcons = {
   "Subscription Services": Repeat,
   "Seasonal Products": Snowflake,
 };
+//
 
 const initialProducts = [
   {
