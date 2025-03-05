@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Sun, Moon, Monitor } from "lucide-react";
 import { useTheme } from "../theme/DarkMode";
-import Login from "../auth/login";
+import Login from "../auth/Login";
 import Signup from "../auth/SignUp";
 import { Link, Navigate, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
