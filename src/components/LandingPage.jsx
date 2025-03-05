@@ -17,7 +17,6 @@ const categoryIcons = {
   "Subscription Services": Repeat,
   "Seasonal Products": Snowflake,
 };
-//
 
 const initialProducts = [
   {
@@ -191,10 +190,10 @@ const LandingPage = () => {
                 <div className="flex justify-between items-center mb-3">
                   <div>
                     <span className="line-through text-gray-500 mr-2">
-                      ${product.originalPrice.toFixed(2)}
+                      ₹{product.originalPrice.toFixed(2)}
                     </span>
                     <span className="text-green-600 font-bold text-xl">
-                      ${product.currentPrice.toFixed(2)}
+                      ₹{product.currentPrice.toFixed(2)}
                     </span>
                   </div>
                   <div className="flex items-center">

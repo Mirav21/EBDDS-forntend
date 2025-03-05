@@ -59,7 +59,7 @@ const Navbar = () => {
   useEffect(() => {
     //function which call every second
     const interval = setInterval(() => {
-      if (isLoggedIn) {
+      if (localStorage.getItem("Token")) {
         const decodedToken = jwtDecode(localStorage.getItem("Token"));
         if (decodedToken.exp * 1000 < Date.now()) {
           handleLogout();
@@ -71,7 +71,7 @@ const Navbar = () => {
       }
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isLoggedIn, isAdmin]);
 
   const handleLoginPopup = () => {
     setIsLoginPopupOpen(!isLoginPopupOpen);
