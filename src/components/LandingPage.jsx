@@ -49,8 +49,10 @@ const LandingPage = () => {
   };
 
   useEffect(() => {
-    fetchProducts();
-  }, []); //Fixed: Added empty dependency array to only run on mount
+    if (localStorage.getItem("Token")) {
+      fetchProducts();
+    }
+  }, []);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);

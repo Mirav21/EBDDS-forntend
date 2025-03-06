@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "../theme/DarkMode";
 import Login from "../auth/Login";
 import Signup from "../auth/SignUp";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -9,7 +8,6 @@ import { jwtDecode } from "jwt-decode";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [theme, setTheme] = useTheme();
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState(
