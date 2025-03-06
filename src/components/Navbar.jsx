@@ -108,7 +108,7 @@ const Navbar = () => {
 
             {/* Search Bar */}
             <form
-              className="flex items-center shadow-md rounded-lg md:w-1/2"
+              className="hidden md:flex items-center shadow-md rounded-lg md:w-1/2"
               onSubmit={handleSearch}
             >
               <input
