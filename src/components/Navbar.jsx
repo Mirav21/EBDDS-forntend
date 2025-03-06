@@ -105,10 +105,8 @@ const Navbar = () => {
                 onClick={() => redirect("/")}
                 className="flex items-center text-4xl font-bold cursor-pointer"
               >
-                <span className="relative text-blue-700 dark:text-blue-500 text-5xl">
-                  L
-                </span>
-                <span className="relative dark:text-white">H8080</span>
+                <span className="relative text-blue-700 text-5xl">L</span>
+                <span className="relative">H8080</span>
               </button>
             </div>
 
@@ -139,7 +137,7 @@ const Navbar = () => {
                 <div className="flex items-center space-x-4">
                   <button
                     onClick={() => redirect("addProduct")}
-                    className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md dark:bg-blue-500 dark:hover:bg-blue-600"
+                    className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md"
                   >
                     Add Products
                   </button>
@@ -149,14 +147,14 @@ const Navbar = () => {
               {localStorage.getItem("Token") ? (
                 <button
                   onClick={handleLogout}
-                  className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md dark:bg-blue-500 dark:hover:bg-blue-600"
+                  className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md"
                 >
                   Logout
                 </button>
               ) : (
                 <button
                   onClick={handleLoginPopup}
-                  className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md dark:bg-blue-500 dark:hover:bg-blue-600"
+                  className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md"
                 >
                   Login/Register
                 </button>
