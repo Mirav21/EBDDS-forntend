@@ -276,8 +276,6 @@ const UpdateProductForm = ({
                   value={product.maximumProfitMargin || 0}
                   onChange={handleInputChange}
                   className="w-full p-2 border rounded"
-                  min="0"
-                  max="1"
                   step="0.01"
                 />
               </div>
@@ -292,8 +290,6 @@ const UpdateProductForm = ({
                   value={product.currentProfitMargin || 0}
                   onChange={handleInputChange}
                   className="w-full p-2 border rounded"
-                  min="0"
-                  max="1"
                   step="0.01"
                 />
               </div>
