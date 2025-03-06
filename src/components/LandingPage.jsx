@@ -416,8 +416,8 @@ const LandingPage = () => {
             How Our Discounts Work
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our AI-powered platform uses advanced algorithms to determine the
-            optimal discount for each product
+            Our platform uses advanced algorithms to determine the optimal
+            discount for each product
           </p>
         </motion.div>
 
