@@ -272,7 +272,7 @@ const UpdateProductForm = ({
                 </label>
                 <input
                   type="number"
-                  name="maxProfitMargin"
+                  name="maximumProfitMargin"
                   value={product.maximumProfitMargin || 0}
                   onChange={handleInputChange}
                   className="w-full p-2 border rounded"
